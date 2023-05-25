@@ -16,3 +16,14 @@ def encrypt_message(message: str, key: int):
         part_two, part_one = part_one, part_two
 
     return "".join(part_one) + "_" + "".join(part_two)
+
+
+""" message = "Python is easy!"
+key1 = 2
+key2 = 5
+key3 = -12
+
+print(encrypt_message(message, key1))
+print(encrypt_message(message, key2))
+print(encrypt_message(message, key3))
+ """
