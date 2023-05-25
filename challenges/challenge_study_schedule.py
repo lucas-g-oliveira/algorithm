@@ -1,5 +1,7 @@
 def study_schedule(permanence_period, target_time):
-    if 0 > target_time or target_time > 23:
+    if not isinstance(target_time, int) or not isinstance(
+        permanence_period, list
+    ):
         return None
 
     result = 0
@@ -9,3 +11,8 @@ def study_schedule(permanence_period, target_time):
         elif i[0] <= target_time and target_time <= i[1]:
             result += 1
     return result
+
+
+lista = [(2, 2), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)]
+hour = 2
+print(study_schedule(lista, "x"))
