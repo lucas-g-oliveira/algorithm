@@ -18,8 +18,10 @@ def quick_sort(word: str):
 
 
 def is_anagram(first_string, second_string):
-    if first_string == "" or second_string == "":
-        return False
+    if not isinstance(second_string, str) or not isinstance(
+        second_string, str
+    ):
+        return "false"
     first = quick_sort(str(first_string).lower())
     second = quick_sort(str(second_string).lower())
 
