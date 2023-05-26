@@ -1,3 +1,8 @@
 def find_duplicate(nums):
-    """Faça o código aqui."""
-    raise NotImplementedError
+    isvalid = isinstance(nums, list) and len(nums) > 1
+    isvalid = (isvalid and isinstance(nums, str))
+
+    if isvalid:
+        return True
+
+    return False
